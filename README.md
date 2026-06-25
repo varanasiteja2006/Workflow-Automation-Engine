@@ -1,4 +1,4 @@
-# 🚀 Workflow Automation Engine
+# 🚀 Workflow Automation Engine (Teletype)
 
 <p align="center">
   <strong>Python & Selenium Based Workflow Automation Framework</strong><br>
