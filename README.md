@@ -72,7 +72,130 @@ The design emphasizes:
 * Scalability
 
 ---
+## 🧠 Automation Algorithm
 
+The Workflow Automation Engine follows a continuous monitoring and execution model designed to automate repetitive browser-based workflows while maintaining reliability and consistency.
+
+### High-Level Algorithm
+
+```text
+START
+
+1. Load Configuration
+   - Read environment variables
+   - Load credentials
+   - Load execution settings
+
+2. Initialize Browser
+   - Configure Chrome WebDriver
+   - Apply browser options
+   - Launch browser instance
+
+3. Open Target Application
+
+4. Authenticate User
+   - Locate login fields
+   - Enter credentials
+   - Wait for authentication
+
+5. Initialize Execution Metrics
+   - Total Tasks Processed
+   - Total Updates
+   - Performance Statistics
+
+6. Enter Continuous Processing Loop
+
+   WHILE System is Running
+
+      a. Check for Available Actions
+
+      b. If Refresh Action Exists
+            Execute Refresh
+            Continue Loop
+
+      c. Detect Input Elements
+
+      d. If Input Field Exists
+            Process Task
+            Execute Required Action
+            Update Statistics
+         Else
+            Trigger Save / Continue Action
+
+      e. Calculate Performance Metrics
+
+      f. Log Execution Status
+
+      g. Wait for Next Execution Cycle
+
+   END WHILE
+
+7. Handle Exceptions
+   - Log Errors
+   - Recover Execution
+   - Resume Processing
+
+END
+```
+
+### Workflow Visualization
+
+```text
+Load Configuration
+        │
+        ▼
+Initialize Browser
+        │
+        ▼
+Authenticate User
+        │
+        ▼
+Initialize Metrics
+        │
+        ▼
+ ┌───────────────────┐
+ │ Continuous Engine │
+ └───────────────────┘
+          │
+          ▼
+   Check Available
+      Actions
+          │
+          ▼
+   Process Workflow
+          │
+          ▼
+ Update Statistics
+          │
+          ▼
+   Error Handling
+          │
+          ▼
+      Repeat
+```
+
+### Time Complexity
+
+| Operation | Complexity |
+|------------|------------|
+| Element Detection | O(n) |
+| Workflow Processing | O(1) |
+| Statistics Calculation | O(1) |
+| Continuous Monitoring | O(n) |
+
+Where **n** represents the number of active browser elements scanned during each execution cycle.
+
+### Design Principles
+
+- Event-driven workflow monitoring
+- Continuous task processing
+- Fault-tolerant execution
+- Dynamic element handling
+- Scalable automation architecture
+- Real-time performance tracking
+- Modular workflow design
+
+The algorithm was designed to ensure long-duration execution stability while minimizing manual intervention and maximizing workflow efficiency.
 ## ⚙️ Core Features
 
 ### 🔄 Automated Workflow Processing
